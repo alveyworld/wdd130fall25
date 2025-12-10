@@ -1,0 +1,166 @@
+/* Add your CSS here to style your halloween page */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #111 url(../images/candycorn.png);
+  color: orangered;
+}
+#wrapper {
+    width: 900px;
+    margin: auto;
+}
+
+
+/* Header layout */
+header {
+  background: #222;
+  padding: 0;
+  border-bottom: 2px solid #ff7518; /* Halloween orange accent */
+}
+
+/* Navigation container */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* center tabs */
+  font-size: 2em;
+}
+
+/* Tab items */
+nav ul li {
+  padding: 15px 30px;
+  color: #fff;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+nav ul li:hover {
+  background: orangered;
+  color: black;
+  border-bottom: 3px solid #ff7518; /* orange underline */
+}
+
+/* Active tab example */
+nav ul li.active {
+  background: #333;
+  border-bottom: 3px solid #ff7518;
+  color: #ff7518;
+}
+
+main {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #1a1a1a;
+  color: #eee;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(255, 117, 24, 0.4);
+  font-family: 'Poppins', sans-serif;
+}
+
+main h1 {
+  text-align: center;
+  color: #ff7518;
+  font-size: 3em;
+  text-shadow: 0 0 10px #ff4500;
+}
+
+main img {
+  display: block;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* Accordion base */
+section {
+  background: #222;
+  margin: 15px 0;
+  border: 2px solid #ff7518;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+/* Section headers */
+section h2 {
+  margin: 0;
+  padding: 15px 20px;
+  font-size: 1.4em;
+  color: #ff7518;
+  cursor: pointer;
+  background: linear-gradient(90deg, #111, #222);
+  transition: all 0.3s ease;
+}
+
+section h2:hover {
+  background: #333;
+  text-shadow: 0 0 6px #ff7518;
+}
+
+/* Hidden paragraphs */
+section p {
+  max-height: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0 20px;
+  background: #1a1a1a;
+  transition: all 0.5s ease;
+  line-height: 1.5;
+}
+
+/* Accordion effect — expand on hover or focus */
+section:hover p,
+section:focus-within p {
+  max-height: 300px;
+  padding: 15px 20px;
+}
+
+/* Optional spooky flicker for headers */
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow: 0 0 10px #ff7518;
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+  }
+}
+
+section h2 {
+  animation: flicker 3s infinite;
+}
+
+/* Spooky shake animation */
+@keyframes shake {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  10%, 30%, 50%, 70%, 90% { transform: translate(-5px, 0) rotate(-2deg); }
+  20%, 40%, 60%, 80% { transform: translate(5px, 0) rotate(2deg); }
+}
+
+/* Make image shake on hover or touch */
+main img {
+  display: block;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+/* When hovered (mouse) or tapped (mobile touch) */
+main img:hover,
+main img:active {
+  animation: shake 0.6s;
+}
+
+main section:first-of-type {
+  background: #331100 url(../images/pumpkin.png);
+  border-color: #ff7518;
+  box-shadow: 0 0 20px #ff7518;
+}

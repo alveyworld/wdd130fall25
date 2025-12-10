@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brother Alvey Portal Page</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="images/logo.png">
+            <h1>Alvey Portal Page</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="wwr/index.html">WWR</a>
+                <a href="ice.html">ICE</a>
+                <a href="https://alveyworld.github.io/wdd130-smith/">Project</a>
+                
+            </nav>
+        </header>
+        
+        <main>
+            <section class="col_left">
+                <img src="images/wwr_dragons.png" alt="Rafting Dragons having fun">
+                <p>Built haven faint of heart Bludvists responsibility sail drowning Dragos liberate mutiny.</p>
+            </section>
+            <section class="col_right">
+                <img src="images/ice_elf.png" alt="Cold magically elf">
+                <p>Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm.</p>
+            </section>
+            <section class="col_left">
+                <img src="images/hobbit_project.png" alt="Helpful Hobbits">
+                <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow</p>
+            </section>
+            <section class="vert col_right">
+                <a href="aboutme.html">
+                    <img src="images/elvey.png" alt="alvey the elf">
+                </a>
+                <p>Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.</p>
+            </section>
+            <section id="ads">
+                <form>
+                    
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first_name" required>
+                    
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last_name" required>
+                    
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    
+                        <label>Gender</label>
+                        <div>
+                            Male <input type="radio" name="gender" value="male" required> 
+                            Female <input type="radio" name="gender" value="female">
+                        </div>
+                        
+
+                   
+                        <label for="country">Country</label>
+                        <select id="country" name="country" required>
+                            <option value="" selected disabled>Select your country</option>
+                            <option value="us">United States</option>
+                            <option value="ca">Canada</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="au">Australia</option>
+                            <option value="de">Germany</option>
+                            <option value="in">India</option>
+                            <option value="jp">Japan</option>
+                        </select>
+                    
+
+                    
+                        <legend>Fantasy Creatures</legend>
+                        <div>
+                            <input type="checkbox" name="creatures[]" value="dragons">
+                            <label>Dragons</label><br>
+                            <input type="checkbox" name="creatures[]" value="elves">
+                            <label>Elves</label><br>
+                            <input type="checkbox" name="creatures[]" value="hobbits">
+                            <label>Hobbits</label><br>
+                        </div>
+                 
+
+                    
+                        <label for="notes">Notes</label>
+                        <textarea id="notes" name="notes" rows="4" cols="4"
+                            placeholder="Anything else you'd like to add?"></textarea>
+                   
+                        <button id="sb" type="submit">Submit</button>
+                    
+                </form>
+
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="wwr/index.html">WWR</a></li>
+                <li><a href="ice.html">ICE</a></li>
+                <li><a href="https://alveyworld.github.io/wdd130-smith/">Project</a></li>
+            </ul>
+            <p>Copyright 2025 &copy;</p>
+        </footer>
+    </div>
+</body>
+
+</html>
