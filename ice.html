@@ -10,15 +10,8 @@
 
 <body>
     <div id="wrapper">
-        <header>
-            <img src="images/logo.png">
-            <h1>Alvey Portal Page</h1>
-             <nav>
-                <a href="index.html">Home</a>
-                <a href="wwr/index.html">WWR</a>
-                <a href="#">ICE</a>
-                <a href="#">Project</a>
-            </nav>
+        <header id="header">
+            
         </header>
        
         <main>
@@ -84,16 +77,24 @@
 
             </section>
         </main>
-        <footer>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">WWR</a></li>
-                <li><a href="#">ICE</a></li>
-                <li><a href="#">Project</a></li>
-            </ul>
-            <p>Copyright 2025 &copy;</p>
+        <footer id="footer">
+            
         </footer>
     </div>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
 
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    });
+</script>
 </html>

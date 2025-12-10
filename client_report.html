@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brother Alvey Portal Page - Client Report</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="header">
+            
+        </header>
+       
+        <main style="display:block;">
+            
+            <!-- Put links to your ice challenges here -->
+            <p>
+            <h2>Final Report</h2>
+            <hr>
+            <h3>Client Report</h3>
+            <p>Fruitcake danish pie chocolate cake cake dessert sesame snaps sweet roll topping. Croissant candy canes halvah croissant sweet muffin. Jelly beans caramels sweet roll oat cake toffee bear claw ice cream gummies bonbon. Jelly beans tootsie roll croissant chocolate oat cake bonbon chupa chups toffee. Dragée jujubes gingerbread bear claw ice cream sweet roll soufflé gummi bears chocolate bar. Candy dragée icing carrot cake soufflé. Gummi bears tart liquorice cookie cupcake chocolate bar pudding jelly-o. Gummi bears macaroon tart pastry cotton candy cookie sweet roll. Gingerbread cookie apple pie tart jelly-o chocolate bar liquorice macaroon lollipop. Gummies lemon drops oat cake chupa chups fruitcake ice cream caramels tiramisu sweet. Brownie cake lemon drops toffee marzipan jujubes marzipan macaroon cotton candy. Croissant halvah chocolate bar powder bonbon bonbon.</p>
+            </p>
+            <h3>Lead Dev Report</h3>
+            <p>Powder caramels carrot cake tootsie roll jelly-o topping brownie sugar plum jelly beans. Apple pie cookie bonbon candy canes muffin macaroon brownie. Sugar plum cheesecake cake marzipan donut wafer sweet dragée. Tootsie roll chocolate cake gummi bears cake pudding chocolate cake. Gummi bears cookie danish dessert dessert croissant. Soufflé ice cream bonbon jelly beans sweet roll bear claw halvah bonbon chocolate. Tootsie roll icing tootsie roll fruitcake candy sweet pie. Macaroon soufflé oat cake chocolate bar gummies. Liquorice apple pie cotton candy dessert muffin lemon drops. Pudding jelly liquorice muffin muffin soufflé. Bonbon fruitcake candy oat cake apple pie sugar plum halvah icing donut. Cake carrot cake soufflé sugar plum cookie oat cake.
+
+</p>
+            <h3>Jr Dev Report</h3>
+            <p>Biscuit cheesecake brownie dessert gingerbread. Cupcake liquorice bear claw sweet cupcake powder pudding marshmallow. Sesame snaps jelly beans candy liquorice pie cake sweet roll lemon drops. Lemon drops icing soufflé muffin jelly macaroon. Sweet roll soufflé toffee donut cheesecake cotton candy. Danish caramels dessert chocolate cake toffee macaroon. Chupa chups sweet cupcake pastry liquorice chupa chups. Lollipop cake chocolate bar apple pie chocolate bar bear claw cheesecake. Toffee marzipan chocolate bar dessert lollipop. Pie bonbon halvah lollipop sweet. Lemon drops cake jelly beans soufflé biscuit gummi bears. Halvah sweet apple pie jelly beans chocolate cake sugar plum sweet roll tootsie roll tart. Danish jujubes pastry bonbon dragée candy canes sweet muffin.</p>
+
+            <h3>General Experience and Reflections</h3>
+            <p>Pie cookie chocolate bar sugar plum oat cake danish marshmallow. Lemon drops cookie donut bear claw cupcake jelly cupcake donut shortbread. Cake liquorice candy canes cake cake lemon drops chocolate bar sweet roll gingerbread. Marshmallow bonbon liquorice candy canes soufflé lollipop jelly beans chocolate lemon drops. Sweet caramels cake bear claw ice cream chocolate bar sesame snaps. Pie marzipan oat cake marzipan macaroon chupa chups. Apple pie candy canes carrot cake cake cake pastry tiramisu jelly-o halvah. Cheesecake cookie topping bear claw cotton candy chocolate bar soufflé cotton candy. Lemon drops lemon drops liquorice chocolate pudding. Cake gummies gummi bears sugar plum icing. Marzipan muffin soufflé carrot cake soufflé chocolate cake macaroon dessert. Candy canes bonbon wafer jujubes brownie wafer. Cotton candy jelly soufflé powder bonbon ice cream muffin. Bear claw bear claw oat cake carrot cake sweet roll cupcake candy canes chocolate bar sweet.</p>
+            <section id="ads">
+                <form>
+                    
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first_name" required>
+                    
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last_name" required>
+                    
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    
+                        <label>Gender</label>
+                        <div>
+                            Male <input type="radio" name="gender" value="male" required> 
+                            Female <input type="radio" name="gender" value="female">
+                        </div>
+                        
+
+                   
+                        <label for="country">Country</label>
+                        <select id="country" name="country" required>
+                            <option value="" selected disabled>Select your country</option>
+                            <option value="us">United States</option>
+                            <option value="ca">Canada</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="au">Australia</option>
+                            <option value="de">Germany</option>
+                            <option value="in">India</option>
+                            <option value="jp">Japan</option>
+                        </select>
+                    
+
+                    
+                        <legend>Fantasy Creatures</legend>
+                        <div>
+                            <input type="checkbox" name="creatures[]" value="dragons">
+                            <label>Dragons</label><br>
+                            <input type="checkbox" name="creatures[]" value="elves">
+                            <label>Elves</label><br>
+                            <input type="checkbox" name="creatures[]" value="hobbits">
+                            <label>Hobbits</label><br>
+                        </div>
+                 
+
+                    
+                        <label for="notes">Notes</label>
+                        <textarea id="notes" name="notes" rows="4" cols="4"
+                            placeholder="Anything else you'd like to add?"></textarea>
+                   
+                        <button id="sb" type="submit">Submit</button>
+                    
+                </form>
+
+            </section>
+        </main>
+        <footer id="footer">
+            
+        </footer>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    });
+</script>
+</html>
